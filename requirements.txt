@@ -1,0 +1,7 @@
+beautifulsoup4==4.12.3
+chromadb>=0.4.15
+requests>=2.31.0
+pathlib
+langchain-community
+python-frontmatter
+nltk
