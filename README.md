@@ -85,43 +85,64 @@ python analyze.py --max-iterations 10 --question "Complex research question"
 
 ⸻
 
-📈 Example Workflow
+## 📈 Example Workflow
+
 	1.	OpenAI .json → Markdown files via extract_chats.py
+
 	2.	.md documents → ChromaDB via python analyze.py --process
+
 	3.	User query → agent_search.py runs:
+
 	•	Agents: ContextBot → SynthAI → ValidatorPro → ExplorerX → ChronoAgent → TechSpec
+
 	•	Agents collaborate, pass messages, and fallback dynamically.
+
 	•	Final synthesizer orchestrates complete report via Ollama.
 
+
 ⸻
 
-💡 Future Ideas & Improvements
+## 💡 Future Ideas & Improvements
+
 	•	Improved chunking strategies: hierarchical splitting, semantic-aware segmentation
+
 	•	Modular agent framework: break out agents into clean modules for reuse and extension
+
 	•	RSS scraper integration: auto-fetch news updates, summarize to .md, and periodically ingest into ChromaDB
+
 	•	Alternate agent architectures: explore better coordination strategies
+
 	•	Optional UI: e.g. simple Streamlit interface to ask questions and view sources and confidence scores
 
+
 ⸻
 
-🔍 Feedback & Collaboration
+## 🔍 Feedback & Collaboration
 
 I’d love to hear your thoughts on:
+
 	•	Better chunking or embedding workflows
+
 	•	Improvements to agent collaboration or orchestration logic
+
 	•	Best practices or frameworks for multi-agent modular design
+
 	•	Integration of additional data sources like RSS, bookmarks, etc.
 
 This approach has already outperformed basic semantic recall—especially for creating transparent, trustworthy research reports. Let’s explore how to make agentic research on personal data even better.
 
 ⸻
 
-⚙️ Quick Summary
+## ⚙️ Quick Summary
 
 Step	Description
+
 💬 Extract	.json → dated .md files
+
 🧷 Ingest	.md → ChromaDB
+
 🔄 Research	Multi-agent search for your query
+
 🧾 Report	Synthesized output via Ollama
 
 
