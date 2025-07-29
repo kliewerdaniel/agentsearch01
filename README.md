@@ -71,16 +71,16 @@ Step 1: Prepare your data
 Step 2: Process Documents and Search
 
 # Process files and start research
-python analyze.py --process --search
+python agent_search.py --process --search
 
 # Multi-agent research on a complex question
-python analyze.py --question "What are the main factors contributing to climate change and their historical timeline?"
+python agent_search.py --question "What are the main factors contributing to climate change and their historical timeline?"
 
 # Interactive multi-agent session
-python analyze.py --search
+python agent_search.py --search
 
 # Single question with custom iterations
-python analyze.py --max-iterations 10 --question "Complex research question"
+python agent_search.py --max-iterations 10 --question "Complex research question"
 ```
 
 ⸻
